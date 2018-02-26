@@ -14,13 +14,13 @@ async function run() {
   while (true) {
     const d = Date.now();
     try {
-      // reguoar request without es package
-      // await request({
-      //   url: process.env.ELASTIC_HOST,
-      //   method: 'HEAD'
-      // });
+      // regular request without es package
+      await request({
+        url: process.env.ELASTIC_HOST,
+        method: 'HEAD'
+      });
 
-      await client.ping();
+      // await client.ping();
       const time = Date.now() - d;
       max = Math.max(max, time);
 
