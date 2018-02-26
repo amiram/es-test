@@ -27,7 +27,7 @@ await request({
 });
 
 // await client.ping();
-<pre>
+</pre>
 
 My results for more than an hour of pings (server is on aws ireland):
 
