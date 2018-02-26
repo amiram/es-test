@@ -36,3 +36,6 @@ My results for more than an hour of pings (server is on aws ireland):
 2. Ubuntu ends with around 3 errors per hour when using elasticsearch.js without changing the default timeout which is 3000. With request, some requests takes around 5500ms.
 
 ### Conclusion: With ubuntu you must increase the request timout to more than 5000 ms.
+
+This is verified in production where we have many alpine and ubuntu containers, and with 5000ms timeout the ubuntu containers have errors few times per hour.
+
